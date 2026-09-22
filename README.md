@@ -48,7 +48,6 @@ The server was benchmarked using a custom multi-threaded testing suite simulatin
 
 You can easily run the server using Docker, completely isolated and without needing Java installed on your machine. Data persistence is ensured via Docker volumes.
 
-1. Build the image:
    ```bash
    docker build -t mini-redis .
    docker run -p 6379:6379 -v redis-data:/data mini-redis
