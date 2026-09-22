@@ -50,4 +50,5 @@ You can easily run the server using Docker, completely isolated and without need
 
 1. Build the image:
    ```bash
-   docker build -t mini-redis-java .
+   docker build -t mini-redis .
+   docker run -p 6379:6379 -v redis-data:/data mini-redis
