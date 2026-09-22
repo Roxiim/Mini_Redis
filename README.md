@@ -43,3 +43,11 @@ The server was benchmarked using a custom multi-threaded testing suite simulatin
    telnet localhost 6379
    # or using netcat
    echo "PING" | nc localhost 6379
+
+   ## 🐳 Run with Docker
+
+You can easily run the server using Docker, completely isolated and without needing Java installed on your machine. Data persistence is ensured via Docker volumes.
+
+1. Build the image:
+   ```bash
+   docker build -t mini-redis-java .
